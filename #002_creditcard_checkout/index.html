@@ -1,0 +1,91 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="app.js" async charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Test</title>
+</head>
+<body>
+
+<!--MENU-->
+
+    <div class="menubar">
+        <div class="logo"><p>Credit Card Checkout</p></div>
+    </div>
+
+<!--PAGE__1-->
+
+    <div class="page1">
+       <div class="page1__box">
+            <div class="page1__box__column1">
+                <div class="whiteline"></div>
+                <div class="column1__stages">
+                    <div class="column1__stages__box">
+                        <div class="column1__stages__box__circle circle"><img src="./images/check.png" alt=""></div>
+                        <div class="column1__stages__box__stage">Shopping</div>
+                    </div>
+                    <div class="column1__stages__box">
+                        <div class="column1__stages__box__circle"></div>
+                        <div class="column1__stages__box__stage">Payment</div>
+                    </div>
+                    <div class="column1__stages__box">
+                        <div class="column1__stages__box__circle circle2"></div>
+                        <div class="column1__stages__box__stage">Done!</div>
+                    </div>
+                </div>
+                <div class="column1__title">Order Summary</div>
+                <div class="column1__total">
+                    <div class="column1__total__box">
+                        <div class="column1__total__box__title">Order Subtotal</div>
+                        <div class="column1__total__box__price">49.99€</div>
+                    </div>
+                    <div class="column1__total__box" style=" border-bottom: 1px solid black;">
+                        <div class="column1__total__box__title">Shipping</div>
+                        <div class="column1__total__box__price">9.99€</div>
+                    </div>
+                    <div class="column1__total__box">
+                        <div class="column1__total__box__title">Order Total</div>
+                        <div class="column1__total__box__price">59.98€</div>
+                    </div>
+                </div>
+                <div class="column1__return">Return to cart</div>
+            </div>
+
+
+
+            <div class="page1__box__column2">
+                <div class="column2__card">
+                    <div class="column2__card__1" onclick="changeColor2()">VISA</div>
+                    <div class="column2__card__2" onclick="changeColor()">PAYPAL</div>
+                </div>
+                <div class="column2__title">Payment Details</div>
+                <div class="column2__box">
+                    <div class="column2__box__title">CARDHOLDER NAME</div>
+                    <input type="text" placeholder="John Smith" class="column2__box__imput">
+                </div>
+                <div class="column2__box">
+                    <div class="column2__box__title">CARD NUMBER</div>
+                    <input type="number" placeholder="1234   5678   9012   3456" class="column2__box__imput">
+                </div>
+                <div class="column2__box" style="display: flex;">
+                    <div class="column2__box__details">
+                        <div class="column2__box__title">EXPIRATION DATE</div>
+                        <input type="date"  class="column2__box__imput input1">
+                    </div>
+                    <div class="column2__box__details" style="display: flex;flex-direction: column; align-items: end;">
+                        <div class="column2__box__title input2">CVV</div>
+                        <input type="number" placeholder="123" class="column2__box__imput input2">
+                    </div>
+            
+                </div>
+                <div class="column2__box">
+                    <button class="column2__box__btn"><a href="index2.html">PAY 59.98€</a></button>
+                </div>
+
+            </div>
+       </div>
+
+    </div>
+</body>
+</html>
